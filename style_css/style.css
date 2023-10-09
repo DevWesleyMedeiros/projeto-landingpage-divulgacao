@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;;
+}
+body, html{
+  height: 100%;
+}
+div.container{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+div.clear{
+  clear: both;
+}
+header{
+  background-color: rgb(180, 180, 180);
+  padding: 10px 2% 40px 2%;
+}
+div.logo1{
+  float: left;
+  width: 160px;
+  height: 70px;
+  background-image: url("../logos/minha-logo-1.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.logo2{
+  float: right;
+  width: 160px;
+  height: 70px;
+  background-image: url("../logos/minha-logo-2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.cover-form{
+  width: 100%;
+}
+div.bg{
+  height: 600px;
+  background-image: url("../assets-img/susset-img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+div.form-container{
+  margin-right: 40px;
+  width: 400px;
+  height: 100%;
+  box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+div.form-container h2{
+  font-weight: normal;
+  padding: 25px 15px;
+  color: black;
+  font-size: 18px;
+  background-color: rgb(210, 210, 210);
+}
+div.form-container form{
+  margin-top: 15px;
+  padding: 15px;
+}
+div.form-container p{
+  font-size: 14px;
+  color: #525252;
+}
+div.form-container form input[type=text]{
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 45px;
+  padding-left: 10px;
+  outline: none;
+}
+div.form-container form input[type=email]{
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 45px;
+  padding-left: 10px;
+  outline: none;
+}
+div.form-container form input[type=tel]{
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 45px;
+  padding-left: 10px;
+  outline: none;
+}
+div.form-container form input[type=submit]{
+  background-color: #033c50;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  border: 0;
+}
+div.form-wraper{
+  margin-top: 40px;
+}
+div.form-wraper:last-child{
+  margin-top: 20px;
+}
+section.chamada{
+  text-align: center;
+  z-index: 1;
+}
+div.icone-seta img{
+  width: 64px;
+  height: 64px;
+  background-size: 100% 100%;
+  background-image: url("../assets-img/arrow.png");
+  position: absolute;
+  left: 48%;
+  top: 110%;
+  transform: translateX(-50%);
+}
+section.chamada div.container{
+  background-color: #7c6757;
+  padding: 70px 0 0 0;
+}
+section.chamada h2{
+  width: 96%;
+  max-width: 700px;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+}
+section.chamada p{
+  width: 96%;
+  max-width: 700px;
+  display: inline-block;
+  color: white;
+  margin-top: 10px;
+  padding: 2rem 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+div.flex-mosaico{
+  display: flex;
+}
+div.item-1-mosaico{
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  width: 60%;
+}
+div.item-2-mosaico{
+  width: 40%;
+  padding: 60px 40px;
+  background-color: #215170;
+}
+div.item-1-mosaico p{
+  color: white;
+}
+footer{
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ccc;
+}
+footer p{
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 960px){
+  div.bg{
+    text-align: center;
+    width: 100%;
+  }
+  div.form-container{
+    width: 80%;
+    height: auto;
+    max-width: 400px;
+    position: static;
+    display: inline-block;
+    margin-right: 0;
+  }
+  div.form-wraper p{
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  div.icone-seta{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  div.flex-mosaico{
+    display: block;
+  }
+  div.item-1-mosaico{
+    width: 100%;
+    padding: 80% 0;
+  }
+  div.item-2-mosaico{
+    width: 100%;
+    text-align: start;
+  }
+  header{
+    text-align: center;
+  }
+  div.logo1, div.logo2{
+    margin-top: 10px;
+    display: inline-block;
+    float: none;
+  }
+  div.icone-seta{
+    display: none;
+  }
+  section.chamada div:not("icone-seta"){
+    text-align: start;
+    padding: 1rem 1rem;
+  }
+}
